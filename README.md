@@ -45,6 +45,7 @@ To get dog, follow these steps:
 ```bash
 git clone https://github.com/2kabhishek/dog
 cd dog
+flutter pub get
 dart run bin/dog.dart -n README.md
 ```
 
