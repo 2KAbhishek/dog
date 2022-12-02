@@ -8,6 +8,11 @@ const help = 'help';
 
 void main(List<String> arguments) {
   exitCode = 0; // presume success
+
+  final envVarMap = Platform.environment;
+  final String helpMessage = envVarMap['DOG_HELP'] ??
+      "This is a cat clone written in dart.\nUse -n to show line numbers";
+
   final parser = ArgParser();
   parser.addFlag(lineNumber, negatable: false, abbr: 'n');
   parser.addFlag(help, negatable: false, abbr: 'h');
@@ -16,8 +21,7 @@ void main(List<String> arguments) {
   final paths = argResults.rest;
 
   if (argResults[help]) {
-    stdout.write(
-        "This is a cat clone written in dart.\nUse -n to show line numbers");
+    stdout.write(helpMessage);
   } else {
     dog(paths, showLineNumbers: argResults[lineNumber] as bool);
   }
