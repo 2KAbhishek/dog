@@ -22,12 +22,6 @@
 
 <h3>Minimal cat clone written in dart 🐶🎯</h3>
 
-<figure>
-  <img src= "images/screenshot.png" alt="dog Demo">
-  <br/>
-  <figcaption>dog screenshot</figcaption>
-</figure>
-
 </div>
 
 ## What is this
