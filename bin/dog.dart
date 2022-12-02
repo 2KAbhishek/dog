@@ -16,7 +16,8 @@ void main(List<String> arguments) {
   final paths = argResults.rest;
 
   if (argResults[help]) {
-    print("This is a cat clone written in dart.\nUse -n to show line numbers");
+    stdout.write(
+        "This is a cat clone written in dart.\nUse -n to show line numbers");
   } else {
     dog(paths, showLineNumbers: argResults[lineNumber] as bool);
   }
