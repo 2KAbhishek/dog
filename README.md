@@ -1,6 +1,6 @@
 <div align = "center">
 
-<h1><a href="https://2kabhishek.github.io/dog">dog</a></h1>
+<h1><a href="https://2kabhishek.github.io/dog">🎯 dog 🐶</a></h1>
 
 <a href="https://github.com/2KAbhishek/dog/blob/main/LICENSE">
 <img alt="License" src="https://img.shields.io/github/license/2kabhishek/dog?style=flat&color=eee&label="> </a>
@@ -20,7 +20,7 @@
 <a href="https://github.com/2KAbhishek/dog/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/dog?style=flat&color=e06c75&label="> </a>
 
-<h3>Short sweet headline with 🎇🎉</h3>
+<h3>Minimal cat clone written in dart 🐶🎯</h3>
 
 <figure>
   <img src= "images/screenshot.png" alt="dog Demo">
@@ -32,17 +32,17 @@
 
 ## What is this
 
-dog is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+dog is a rewrite of the `cat` utility in dart, written for learning purposes.
 
 ## Inspiration
 
-dog was inspired by `<reason/idea>`.
+Wanted to learn about building CLIs using dart.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of `<coding_language/dependency/requirement_1>`
+- You have installed the latest version of `dart`
 
 ## Getting dog
 
@@ -51,51 +51,48 @@ To get dog, follow these steps:
 ```bash
 git clone https://github.com/2kabhishek/dog
 cd dog
-<install_command>
+dart run bin/dog.dart -n README.md
 ```
 
 ## Using dog
 
 ```bash
 USAGE:
-    command [FLAGS] [OPTIONS]
+    dog [-nh] [path]
 
 FLAGS:
     -h, --help              Prints help information.
+    -n, --line-number       Prints file at $path with line numbers.
 
 OPTIONS:
-    -o, --option <value>    Option description.
-    Options are: a, b. [default: a]
+    path                    File to print using dog.
 
 Example:
-
+    dog -n README.md
 
 ```
 
 ## How it was built
 
-dog was built using `<tech/library>`
+dog was built using `dart` and `code`.
 
 ## Challenges faced
 
-While building dog the main challenges were `<issue/difficulty>`
+While building dog the main challenges were learning about dart conventions and the `dart` way of doing things.
 
 ## What I learned
 
-While building dog I `<learned/accomplished>` about `<learning/accomplishment>`
-
-## What's next
-
-Planning to add `<feature/module>`.
-
-### To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
-- [ ] Change me
-- [ ] Update README
-- [ ] Finish it
+- `final` vs `const` keywords
+    -`final` should be used when we do not know the value at compile time
+    -`const` should be used when we know values at compile time
+- Using `Future` for long running task
+- Using `Platform.environment` for fetching env values
+- Null checks and the `??` null aware operator
+- Reading args using `ArgParser`
+- Setting exitCodes using `exitCode`
+- Exception handling
+- Managing packages with pub
+- Dart tooling in general
 
 Hit the ⭐ button if you found this useful.
 
